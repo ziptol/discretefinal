@@ -1,9 +1,9 @@
 import time
 #function to return value of a character 0-9 as the same value, A-F as
 def value(num):
-    if num>= '0' and num <= '9':
+    if num>= 0 and num <= 9:
         return chr(num + ord('0'))
-    else : 
+    else :
         return chr(num - 10 + ord('A'))
 
 #function to reverse string
@@ -27,10 +27,9 @@ def fromDectoBase(base,inputnumber):
 
         return len(res)
 
-def graphBase(base):
+def graphBase(base, inp):
     out =[]
     x=[]
-    inp = [1, 10, 100, 1000, 5000, 10000, 50000, 100000, 500000, 100000 ]
     for i in inp:
         start_time = time.time()
         out.append(fromDectoBase(base,i))

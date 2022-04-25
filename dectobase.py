@@ -29,6 +29,7 @@ def dectobase(num):
     
     arr[0] = nums
     arr[1] = times
+    return arr
 
 if __name__ == "__main__":
     main()
